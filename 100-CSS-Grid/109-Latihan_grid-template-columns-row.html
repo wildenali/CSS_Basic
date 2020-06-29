@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Gallery</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #ddd;
+            text-align: center;
+            margin: 30px;
+        }
+
+        img {
+            display: block;
+            width: 100%;
+        }
+
+        .gallery {
+            width: 80%;
+            margin: 20px auto;
+            border: 10px solid white;
+            list-style: none;
+            box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+            display: grid;
+            /* grid-template-columns: repeat(3, 1fr); */
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+
+            /* biar ada gap antar gambarnya */
+            grid-gap: 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <h2>My Galery</h2>
+    <ul>
+        <ul class="gallery">
+            <li><img src="./img/gambar1.jpg" alt=""></li>
+            <li><img src="./img/gambar2.jpg" alt=""></li>
+            <li><img src="./img/gambar3.jpg" alt=""></li>
+            <li><img src="./img/gambar4.jpg" alt=""></li>
+            <li><img src="./img/gambar5.jpg" alt=""></li>
+            <li><img src="./img/gambar6.jpg" alt=""></li>
+            <li><img src="./img/gambar1.jpg" alt=""></li>
+            <li><img src="./img/gambar2.jpg" alt=""></li>
+            <li><img src="./img/gambar3.jpg" alt=""></li>
+            <li><img src="./img/gambar4.jpg" alt=""></li>
+        </ul>
+    </ul>
+</body>
+</html>
